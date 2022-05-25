@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { greetings } from "../portfolio";
 import { Button, Container, Row, Col } from "reactstrap";
+import { Icon } from "@iconify/react";
 import GreetingLottie from "../components/DisplayLottie";
 import SocialLinks from "../components/SocialLinks";
 
@@ -39,7 +40,8 @@ const Greetings = () => {
                       color="default"
                       href={greetings.resumeLink}>
                       <span className="btn-inner--icon mr-1">
-                        <i className="fa fa-file" />
+                        {/* <i className="fa fa-file" /> */}
+                        <Icon icon={"akar-icons:file"} data-inline="false" />
                       </span>
                       <span className="btn-inner--text">See My Resume</span>
                     </Button>

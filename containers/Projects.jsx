@@ -4,6 +4,7 @@ import { projects } from "../portfolio";
 import { Container, Row } from "reactstrap";
 import ProjectsCard from "../components/ProjectsCard";
 import { Fade } from "react-reveal";
+import { Icon } from "@iconify/react";
 
 const Projects = () => {
   return (
@@ -12,7 +13,8 @@ const Projects = () => {
         <div className="d-flex p-4">
           <div>
             <div className="icon icon-lg icon-shape bg-gradient-white shadow rounded-circle text-info">
-              <i className="ni ni-laptop text-info" />
+              {/* <i className="ni ni-laptop text-info" /> */}
+              <Icon icon={"entypo:laptop"} data-inline="false" />
             </div>
           </div>
           <div className="pl-4">
