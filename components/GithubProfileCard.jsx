@@ -2,6 +2,7 @@ import React from "react";
 import { Card, Col, Row, Container } from "reactstrap";
 import SocialLinks from "../components/SocialLinks";
 import Image from "next/image";
+import { Icon } from "@iconify/react";
 
 const GithubProfileCard = ({ prof }) => {
   return (
