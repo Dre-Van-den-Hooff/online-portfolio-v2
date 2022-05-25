@@ -18,7 +18,6 @@ export const contact = {};
 
 export const socialLinks = {
   instagram: "https://www.instagram.com/dre.vdh/",
-  //twitter: "https://twitter.com/1hanzla100",
   github: "https://github.com/Dre-Van-den-Hooff",
   linkedin: "https://www.linkedin.com/in/dr%C3%A9-van-den-hooff-002296227/",
 };

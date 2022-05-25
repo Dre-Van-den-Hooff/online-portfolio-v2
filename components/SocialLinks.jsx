@@ -1,7 +1,6 @@
 import React from "react";
-
 import { Button } from "reactstrap";
-
+import { Icon } from "@iconify/react";
 import { socialLinks } from "../portfolio";
 
 const SocialLinks = () => {
@@ -16,7 +15,8 @@ const SocialLinks = () => {
           rel="noopener"
           aria-label="Facebook">
           <span className="btn-inner--icon">
-            <i className="fa fa-facebook-square" />
+            {/* <i className="fa fa-facebook-square" /> */}
+            <Icon icon={"brandico:facebook-rect"} data-inline="false" />
           </span>
         </Button>
       )}
@@ -29,7 +29,8 @@ const SocialLinks = () => {
           rel="noopener"
           aria-label="Instagram">
           <span className="btn-inner--icon">
-            <i className="fa fa-instagram" />
+            {/* <i className="fa fa-instagram" /> */}
+            <Icon icon={"carbon:logo-instagram"} data-inline="false" />
           </span>
         </Button>
       )}
@@ -42,7 +43,8 @@ const SocialLinks = () => {
           aria-label="Github"
           target="_blank">
           <span className="btn-inner--icon">
-            <i className="fa fa-github" />
+            {/* <i className="fa fa-github" /> */}
+            <Icon icon={"carbon:logo-github"} data-inline="false" />
           </span>
         </Button>
       )}
@@ -55,7 +57,8 @@ const SocialLinks = () => {
           href={socialLinks.linkedin}
           target="_blank">
           <span className="btn-inner--icon">
-            <i className="fa fa-linkedin" />
+            {/* <i className="fa fa-linkedin" /> */}
+            <Icon icon={"carbon:logo-linkedin"} data-inline="false" />
           </span>
         </Button>
       )}
@@ -68,7 +71,8 @@ const SocialLinks = () => {
           rel="noopener"
           aria-label="Twitter">
           <span className="btn-inner--icon">
-            <i className="fa fa-twitter" />
+            {/* <i className="fa fa-twitter" /> */}
+            <Icon icon={"carbon:logo-github"} data-inline="false" />
           </span>
         </Button>
       )}
