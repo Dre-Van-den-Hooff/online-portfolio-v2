@@ -1,5 +1,7 @@
 import emoji from "react-easy-emoji";
 
+const prefix = "/online-portfolio-v2";
+
 export const greetings = {
   name: "Dré Van den Hooff",
   title: "Nice to meet you! I'm Dré",
@@ -29,7 +31,7 @@ export const skillsSection = {
   data: [
     {
       title: "Full Stack Web Development",
-      lottieAnimationFile: "/lottie/skills/fullstack.json", // Path of Lottie Animation JSON File
+      lottieAnimationFile: `${prefix}/lottie/skills/fullstack.json`, // Path of Lottie Animation JSON File
       skills: [
         emoji("⚡ Building responsive Single-Page-Apps (SPA) & PWA in React.js"),
         emoji("⚡ Building responsive mobile applications in React Native"),
@@ -97,7 +99,7 @@ export const skillsSection = {
     },
     {
       title: "Other knowledge",
-      lottieAnimationFile: "/lottie/skills/other-skills.json", // Path of Lottie Animation JSON File
+      lottieAnimationFile: `${prefix}/lottie/skills/other-skills.json`, // Path of Lottie Animation JSON File
       skills: [
         emoji("⚡ Experience with the JavaFX library"),
         emoji("⚡ Experience on working with Java Spring Boot Framework"),
@@ -141,7 +143,7 @@ export const skillsSection = {
     },
     {
       title: "Interested in or currently learning",
-      lottieAnimationFile: "/lottie/skills/learning.json", // Path of Lottie Animation JSON File
+      lottieAnimationFile: `${prefix}/lottie/skills/learning.json`, // Path of Lottie Animation JSON File
       skills: [
         emoji("⚡ iOS app development with Swift"),
         emoji("⚡ Android development with Kotlin"),
