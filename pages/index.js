@@ -20,8 +20,8 @@ export default function Home({ githubProfileData }) {
           title: "Dré Van den Hooff",
           description:
             "I'm 19 years old and I study Applied Information Technology at HoGent. I am passionate about web and mobile development with React and React Native.",
-          image: "https://avatars3.githubusercontent.com/u/59178380?v=4",
-          url: "https://developer-portfolio-1hanzla100.vercel.app",
+          //image: "https://avatars3.githubusercontent.com/u/59178380?v=4",
+          url: "https://dre-van-den-hooff.github.io/online-portfolio-v2/",
           keywords: [
             "Dré",
             "Van den Hooff",
