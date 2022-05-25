@@ -1,8 +1,8 @@
 import React from "react";
-
 import { Card, CardBody, CardTitle, CardSubtitle, CardText, Col } from "reactstrap";
-
 import { Fade } from "react-reveal";
+
+const prefix = "/online-portfolio-v2";
 
 const ExperienceCard = ({ data }) => {
   return (
@@ -11,7 +11,7 @@ const ExperienceCard = ({ data }) => {
         <Card style={{ flex: 1 }} className="shadow-lg--hover mb-3 shadow border-0 text-center rounded">
           <CardBody className="">
             <img
-              src={data.companylogo}
+              src={prefix + data.companylogo}
               style={{
                 objectFit: "cover",
                 left: 0,
