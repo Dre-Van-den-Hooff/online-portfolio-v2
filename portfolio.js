@@ -232,13 +232,13 @@ export const experience = [
 export const projects = [
   {
     name: "Free Games API & Webapplication",
-    desc: "My very first experience with creating a full stack webapplication, made with React, Chakra UI and NodeJs.",
-    github: "",
-    link: "",
+    desc: "My very first experience with creating a full stack webapplication made with React, Chakra UI and a RESTful API.",
+    github: "https://github.com/Dre-Van-den-Hooff/free-games-webapp-api",
+    link: "https://dre-van-den-hooff.github.io/free-games-gh-pages/",
   },
   {
-    name: "Ark API and Webapplication",
-    desc: "My first experience with creating my own API using GraphQL and Apollo Server. The Front-end consists of a React application using TypeScript and Chakra UI.",
+    name: "Ark API & Webapplication",
+    desc: "My first experience with creating my own API using GraphQL and Apollo Server. The Front-end consists of a React application using TypeScript and Chakra UI. ",
     github: "",
     link: "",
   },
