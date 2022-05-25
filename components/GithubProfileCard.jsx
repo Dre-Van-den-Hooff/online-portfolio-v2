@@ -3,8 +3,6 @@ import { Card, Col, Row, Container } from "reactstrap";
 import SocialLinks from "../components/SocialLinks";
 import Image from "next/image";
 
-const prefix = "/online-portfolio-v2";
-
 const GithubProfileCard = ({ prof }) => {
   return (
     <Card className="section-lg bg-gradient-info shadow-lg border-0">
@@ -13,7 +11,7 @@ const GithubProfileCard = ({ prof }) => {
           <Row className="">
             <Col className="order-lg-2" lg="4">
               <img
-                src={prefix + prof.avatar_url}
+                src={prof.avatar_url}
                 style={{ width: "200px" }}
                 alt=""
                 className="rounded-circle img-center img-fluid shadow shadow-lg--hover mb-4"
