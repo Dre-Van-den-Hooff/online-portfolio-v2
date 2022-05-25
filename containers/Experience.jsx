@@ -1,7 +1,7 @@
 import React from "react";
 import { experience } from "../portfolio";
 import { Container, Row } from "reactstrap";
-
+import { Icon } from "@iconify/react";
 import { Fade } from "react-reveal";
 
 import ExperienceCard from "../components/ExperienceCard";
@@ -13,7 +13,8 @@ const Experience = () => {
         <div className="d-flex p-4">
           <div>
             <div className="icon icon-lg icon-shape bg-gradient-white shadow rounded-circle text-info">
-              <i className="ni ni-briefcase-24 text-info" />
+              <Icon icon={"bi:briefcase"} data-inline="false" />
+              {/* <i className="ni ni-briefcase-24 text-info" /> */}
             </div>
           </div>
           <div className="pl-4">

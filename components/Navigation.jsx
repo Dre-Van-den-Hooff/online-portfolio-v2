@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 import { greetings, socialLinks } from "../portfolio";
 import Headroom from "headroom.js";
 import Link from "next/link";
+import { Icon } from "@iconify/react";
 import { UncontrolledCollapse, NavbarBrand, Navbar, NavItem, NavLink, Nav, Container, Row, Col } from "reactstrap";
 
 const Navigation = () => {
@@ -61,7 +62,9 @@ const Navigation = () => {
                       className="nav-link-icon"
                       href={socialLinks.facebook}
                       target="_blank">
-                      <i className="fa fa-facebook-square" />
+                      {/* <i className="fa fa-facebook-square" /> */}
+                      <Icon icon={"brandico:facebook-rect"} data-inline="false" />
+
                       <span className="nav-link-inner--text d-lg-none ml-2">Facebook</span>
                     </NavLink>
                   </NavItem>
@@ -74,7 +77,8 @@ const Navigation = () => {
                       className="nav-link-icon"
                       href={socialLinks.instagram}
                       target="_blank">
-                      <i className="fa fa-instagram" />
+                      {/* <i className="fa fa-instagram" /> */}
+                      <Icon icon={"carbon:logo-instagram"} data-inline="false" />
                       <span className="nav-link-inner--text d-lg-none ml-2">Instagram</span>
                     </NavLink>
                   </NavItem>
@@ -87,7 +91,8 @@ const Navigation = () => {
                       className="nav-link-icon"
                       href={socialLinks.github}
                       target="_blank">
-                      <i className="fa fa-github" />
+                      {/* <i className="fa fa-github" /> */}
+                      <Icon icon={"carbon:logo-github"} data-inline="false" />
                       <span className="nav-link-inner--text d-lg-none ml-2">Github</span>
                     </NavLink>
                   </NavItem>
@@ -100,7 +105,8 @@ const Navigation = () => {
                       className="nav-link-icon"
                       href={socialLinks.linkedin}
                       target="_blank">
-                      <i className="fa fa-linkedin" />
+                      {/* <i className="fa fa-linkedin" /> */}
+                      <Icon icon={"carbon:logo-linkedin"} data-inline="false" />
                       <span className="nav-link-inner--text d-lg-none ml-2">Linkedin</span>
                     </NavLink>
                   </NavItem>
@@ -113,7 +119,8 @@ const Navigation = () => {
                       className="nav-link-icon"
                       href={socialLinks.twitter}
                       target="_blank">
-                      <i className="fa fa-twitter-square" />
+                      {/* <i className="fa fa-twitter-square" /> */}
+                      <Icon icon={"carbon:logo-twitter"} data-inline="false" />
                       <span className="nav-link-inner--text d-lg-none ml-2">Twitter</span>
                     </NavLink>
                   </NavItem>

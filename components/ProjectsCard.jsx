@@ -23,7 +23,9 @@ const ProjectsCard = ({ data }) => {
                     rel="noopener"
                     aria-label="Github">
                     <span className="btn-inner--icon">
-                      <i className="fa fa-github" />
+                      <Icon icon={"carbon:logo-github"} data-inline="false" />
+
+                      {/* <i className="fa fa-github" /> */}
                     </span>
                   </Button>
                 ) : null}
@@ -36,7 +38,9 @@ const ProjectsCard = ({ data }) => {
                     rel="noopener"
                     aria-label="Twitter">
                     <span className="btn-inner--icon">
-                      <i className="fa fa-arrow-right mr-2" />
+                      <Icon icon={"akar-icons:arrow-right"} data-inline="false" />
+
+                      {/* <i className="fa fa-arrow-right mr-2" /> */}
                     </span>
                     <span className="nav-link-inner--text ml-1">Demo</span>
                   </Button>

@@ -22,7 +22,8 @@ const GithubProfileCard = ({ prof }) => {
               <p className="lead text-white mt-3">DISCUSS A PROJECT OR JUST WANT TO SAY HI? MY INBOX IS OPEN FOR ALL</p>
               <p className="text-white mt-3">{prof.bio}</p>
               <div className="my-3 icon-shape bg-gradient-white shadow rounded text-info">
-                <i className="ni ni-pin-3 text-info mr-2" />
+                {/* <i className="ni ni-pin-3 text-info mr-2" /> */}
+                <Icon icon={"carbon:location-filled"} data-inline="false"></Icon>
                 Aalst, Belgium
               </div>
               <SocialLinks />
