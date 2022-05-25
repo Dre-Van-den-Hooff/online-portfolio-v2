@@ -5,8 +5,6 @@ import { Col, Container, Row, UncontrolledTooltip } from "reactstrap";
 import DisplayLottie from "../components/DisplayLottie";
 import { skillsSection } from "../portfolio";
 
-const prefix = "/online-portfolio-v2";
-
 const Skills = () => {
   return (
     <Container className="text-center my-5 section section-lg">
@@ -17,7 +15,7 @@ const Skills = () => {
           <Row className="my-5" key={index}>
             <Col lg="6" className="order-2 order-lg-1">
               <Fade left duration={2000}>
-                <DisplayLottie animationPath={prefix + section.lottieAnimationFile} />
+                <DisplayLottie animationPath={section.lottieAnimationFile} />
               </Fade>
             </Col>
             <Col lg="6" className="order-1 order-lg-2">
