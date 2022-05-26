@@ -26,7 +26,7 @@ const Navigation = () => {
           <Container>
             <NavbarBrand href="https://dre-van-den-hooff.github.io/online-portfolio-v2/" className="mr-lg-5">
               <h2 className="text-white" id="nav-title">
-                {greetings.name}
+                Dre Van den Hooff
               </h2>
             </NavbarBrand>
             <button className="navbar-toggler" aria-label="navbar_toggle" id="navbar_global">
