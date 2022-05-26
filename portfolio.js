@@ -177,6 +177,10 @@ export const skillsSection = {
           skillName: "NextJs",
           fontAwesomeClassname: "logos:nextjs",
         },
+        {
+          skillName: "Svelte",
+          fontAwesomeClassname: "vscode-icons:file-type-svelte",
+        },
       ],
     },
   ],
