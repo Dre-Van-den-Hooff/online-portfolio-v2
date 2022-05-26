@@ -42,7 +42,7 @@ const Navigation = () => {
                 <Row>
                   <Col className="collapse-brand" xs="6">
                     <h3 className="text-black" id="nav-title">
-                      {greetings.name}
+                      Dre Van den Hooff
                     </h3>
                   </Col>
                   <Col className="collapse-close" xs="6">
