@@ -32,8 +32,8 @@ export const skillsSection = {
       title: "Full Stack Web Development",
       lottieAnimationFile: `${prefix}/lottie/skills/fullstack.json`, // Path of Lottie Animation JSON File
       skills: [
-        emoji("⚡ Building responsive Single-Page-Apps (SPA) & PWA in React.js"),
-        emoji("⚡ Building responsive mobile applications in React Native"),
+        emoji("⚡ Building responsive Single-Page-Apps (SPA) in React.js"),
+        emoji("⚡ Building mobile applications in React Native"),
         emoji("⚡ Building RESTful APIs in NodeJs using Koa middleware"),
         emoji("⚡ Building GraphQL APIs in NodeJs with Apollo Server"),
       ],
@@ -145,7 +145,7 @@ export const skillsSection = {
       lottieAnimationFile: `${prefix}/lottie/skills/learning.json`, // Path of Lottie Animation JSON File
       skills: [
         emoji("⚡ iOS app development with Swift"),
-        emoji("⚡ Android development with Kotlin"),
+        emoji("⚡ Android app development with Kotlin"),
         emoji("⚡ Other database solutions such as MongoDB or PostgreSQL"),
       ],
       softwareSkills: [
@@ -200,7 +200,7 @@ export const SkillBars = [
 export const educationInfo = [
   {
     schoolName: "Instituut Sint-Vincentius a Paulo",
-    subHeader: "Modern Sciences - Languages",
+    subHeader: "Modern Languages - Science",
     duration: "September 2018 - June 2020",
     desc: "High School Diploma in Modern Languages & Science.",
   },
