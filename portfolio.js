@@ -242,7 +242,7 @@ export const projects = [
     link: "https://dre-van-den-hooff.github.io/free-games-gh-pages/",
   },
   {
-    name: "Ark API & Webapplication",
+    name: "[WIP] Ark API & Webapplication",
     desc: "My first experience with creating my own API using GraphQL and Apollo Server. The Front-end consists of a React application using TypeScript and Chakra UI. ",
     github: "",
     link: "",
