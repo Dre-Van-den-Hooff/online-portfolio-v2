@@ -227,6 +227,7 @@ export const experience = [
     companylogo: "/img/codifly_logo.png",
     date: "June 2022 - August 2022",
     desc: "My first experience working as a React developer.",
+    link: "https://codifly.be/",
     // descBullets: [
     // 	"Lorem ipsum dolor sit amet, consdfgectetur adipiscing elit",
     // 	"Lorem ipsum dolor sit amet, consectetur adipiscing elit",

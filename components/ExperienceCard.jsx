@@ -27,7 +27,7 @@ const ExperienceCard = ({ data }) => {
               alt={data.companylogo}
             />
             <CardTitle tag="h4" className="mb-2">
-              {data.company}
+              <a href={data.link}>{data.company}</a>
             </CardTitle>
             <CardSubtitle tag="h5" className="mb-2">
               {data.role}
