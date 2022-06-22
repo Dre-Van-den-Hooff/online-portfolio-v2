@@ -222,11 +222,11 @@ export const educationInfo = [
 
 export const experience = [
   {
-    role: "No experience yet",
-    company: "",
-    companylogo: "/img/placeholder.png",
-    date: "",
-    desc: "",
+    role: "React Developer",
+    company: "Codifly",
+    companylogo: "/img/codifly_logo.png",
+    date: "June 2022 - August 2022",
+    desc: "My first experience working as a React developer.",
     // descBullets: [
     // 	"Lorem ipsum dolor sit amet, consdfgectetur adipiscing elit",
     // 	"Lorem ipsum dolor sit amet, consectetur adipiscing elit",
