@@ -224,7 +224,7 @@ export const experience = [
   {
     role: "React Developer",
     company: "Codifly",
-    companylogo: "/company-images/codifly_logo.png",
+    companylogo: "/img/codifly_logo.png",
     date: "June 2022 - August 2022",
     desc: "My first experience working as a React developer.",
     link: "https://codifly.be/",
