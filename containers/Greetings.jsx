@@ -48,7 +48,7 @@ const Greetings = () => {
                   </div>
                 </Col>
                 <Col lg="6">
-                  <GreetingLottie animationPath={`${prefix}/lottie/coding.json`} />
+                  <GreetingLottie animationPath={`/lottie/coding.json`} />
                 </Col>
               </Row>
             </div>

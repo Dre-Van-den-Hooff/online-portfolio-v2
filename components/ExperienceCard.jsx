@@ -11,7 +11,7 @@ const ExperienceCard = ({ data }) => {
         <Card style={{ flex: 1 }} className="shadow-lg--hover mb-3 shadow border-0 text-center rounded">
           <CardBody className="">
             <img
-              src={prefix + data.companylogo}
+              src={data.companylogo}
               style={{
                 objectFit: "cover",
                 left: 0,

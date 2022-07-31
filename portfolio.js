@@ -30,7 +30,7 @@ export const skillsSection = {
   data: [
     {
       title: "Full Stack Web Development",
-      lottieAnimationFile: `${prefix}/lottie/skills/fullstack.json`, // Path of Lottie Animation JSON File
+      lottieAnimationFile: `/lottie/skills/fullstack.json`, // Path of Lottie Animation JSON File
       skills: [
         emoji("⚡ Building responsive Single-Page-Apps (SPA) in React.js"),
         emoji("⚡ Building mobile applications in React Native"),
@@ -98,7 +98,7 @@ export const skillsSection = {
     },
     {
       title: "Other knowledge",
-      lottieAnimationFile: `${prefix}/lottie/skills/other-skills.json`, // Path of Lottie Animation JSON File
+      lottieAnimationFile: `/lottie/skills/other-skills.json`, // Path of Lottie Animation JSON File
       skills: [
         emoji("⚡ Experience with the JavaFX library"),
         emoji("⚡ Experience on working with Java Spring Boot Framework"),
@@ -142,7 +142,7 @@ export const skillsSection = {
     },
     {
       title: "Interested in or currently learning",
-      lottieAnimationFile: `${prefix}/lottie/skills/learning.json`, // Path of Lottie Animation JSON File
+      lottieAnimationFile: `/lottie/skills/learning.json`, // Path of Lottie Animation JSON File
       skills: [
         emoji("⚡ iOS app development with Swift"),
         emoji("⚡ Android app development with Kotlin"),
@@ -224,7 +224,7 @@ export const experience = [
   {
     role: "React Developer",
     company: "Codifly",
-    companylogo: "/img/codifly_logo.png",
+    companylogo: "./public/img/codifly_logo.png",
     date: "June 2022 - August 2022",
     desc: "My first experience working as a React developer.",
     link: "https://codifly.be/",
