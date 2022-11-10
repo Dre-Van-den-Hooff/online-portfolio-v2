@@ -7,7 +7,7 @@ export const greetings = {
   title: "Nice to meet you! I'm Dré",
   description:
     "I'm 19 years old and I study Applied Information Technology at HoGent. I am passionate about web and mobile development with React and React Native.",
-  resumeLink: "",
+  resumeLink: "CV_Dre_Van_den_Hooff.pdf",
 };
 
 export const openSource = {
