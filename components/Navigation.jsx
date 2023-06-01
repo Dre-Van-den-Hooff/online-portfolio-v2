@@ -1,20 +1,30 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from 'react';
 // import { Link } from "react-router-dom";
 
-import { greetings, socialLinks } from "../portfolio";
-import Headroom from "headroom.js";
-import Link from "next/link";
-import { Icon } from "@iconify/react";
-import { UncontrolledCollapse, NavbarBrand, Navbar, NavItem, NavLink, Nav, Container, Row, Col } from "reactstrap";
+import { greetings, socialLinks } from '../portfolio';
+import Headroom from 'headroom.js';
+import Link from 'next/link';
+import { Icon } from '@iconify/react';
+import {
+  UncontrolledCollapse,
+  NavbarBrand,
+  Navbar,
+  NavItem,
+  NavLink,
+  Nav,
+  Container,
+  Row,
+  Col,
+} from 'reactstrap';
 
 const Navigation = () => {
-  const [collapseClasses, setCollapseClasses] = useState("");
-  const onExiting = () => setCollapseClasses("collapsing-out");
+  const [collapseClasses, setCollapseClasses] = useState('');
+  const onExiting = () => setCollapseClasses('collapsing-out');
 
-  const onExited = () => setCollapseClasses("");
+  const onExited = () => setCollapseClasses('');
 
   useEffect(() => {
-    let headroom = new Headroom(document.getElementById("navbar-main"));
+    let headroom = new Headroom(document.getElementById('navbar-main'));
     // initialise
     headroom.init();
   });
@@ -22,14 +32,25 @@ const Navigation = () => {
   return (
     <>
       <header className="header-global">
-        <Navbar className="navbar-main navbar-transparent navbar-light headroom" expand="lg" id="navbar-main">
+        <Navbar
+          className="navbar-main navbar-transparent navbar-light headroom"
+          expand="lg"
+          id="navbar-main"
+        >
           <Container>
-            <NavbarBrand href="https://dre-van-den-hooff.github.io/online-portfolio-v2/" className="mr-lg-5">
+            <NavbarBrand
+              href="https://dre-van-den-hooff.github.io/online-portfolio-v2/"
+              className="mr-lg-5"
+            >
               <h2 className="text-white" id="nav-title">
-                Dre Van den Hooff
+                Dre VdH
               </h2>
             </NavbarBrand>
-            <button className="navbar-toggler" aria-label="navbar_toggle" id="navbar_global">
+            <button
+              className="navbar-toggler"
+              aria-label="navbar_toggle"
+              id="navbar_global"
+            >
               <span className="navbar-toggler-icon" />
             </button>
             <UncontrolledCollapse
@@ -37,7 +58,8 @@ const Navigation = () => {
               navbar
               className={collapseClasses}
               onExiting={onExiting}
-              onExited={onExited}>
+              onExited={onExited}
+            >
               <div className="navbar-collapse-header">
                 <Row>
                   <Col className="collapse-brand" xs="6">
@@ -61,11 +83,17 @@ const Navigation = () => {
                       aria-label="Facebook"
                       className="nav-link-icon"
                       href={socialLinks.facebook}
-                      target="_blank">
+                      target="_blank"
+                    >
                       {/* <i className="fa fa-facebook-square" /> */}
-                      <Icon icon={"brandico:facebook-rect"} data-inline="false" />
+                      <Icon
+                        icon={'brandico:facebook-rect'}
+                        data-inline="false"
+                      />
 
-                      <span className="nav-link-inner--text d-lg-none ml-2">Facebook</span>
+                      <span className="nav-link-inner--text d-lg-none ml-2">
+                        Facebook
+                      </span>
                     </NavLink>
                   </NavItem>
                 )}
@@ -76,10 +104,16 @@ const Navigation = () => {
                       aria-label="Instagram"
                       className="nav-link-icon"
                       href={socialLinks.instagram}
-                      target="_blank">
+                      target="_blank"
+                    >
                       {/* <i className="fa fa-instagram" /> */}
-                      <Icon icon={"carbon:logo-instagram"} data-inline="false" />
-                      <span className="nav-link-inner--text d-lg-none ml-2">Instagram</span>
+                      <Icon
+                        icon={'carbon:logo-instagram'}
+                        data-inline="false"
+                      />
+                      <span className="nav-link-inner--text d-lg-none ml-2">
+                        Instagram
+                      </span>
                     </NavLink>
                   </NavItem>
                 )}
@@ -90,10 +124,13 @@ const Navigation = () => {
                       aria-label="Github"
                       className="nav-link-icon"
                       href={socialLinks.github}
-                      target="_blank">
+                      target="_blank"
+                    >
                       {/* <i className="fa fa-github" /> */}
-                      <Icon icon={"carbon:logo-github"} data-inline="false" />
-                      <span className="nav-link-inner--text d-lg-none ml-2">Github</span>
+                      <Icon icon={'carbon:logo-github'} data-inline="false" />
+                      <span className="nav-link-inner--text d-lg-none ml-2">
+                        Github
+                      </span>
                     </NavLink>
                   </NavItem>
                 )}
@@ -104,10 +141,13 @@ const Navigation = () => {
                       aria-label="Linkedin"
                       className="nav-link-icon"
                       href={socialLinks.linkedin}
-                      target="_blank">
+                      target="_blank"
+                    >
                       {/* <i className="fa fa-linkedin" /> */}
-                      <Icon icon={"carbon:logo-linkedin"} data-inline="false" />
-                      <span className="nav-link-inner--text d-lg-none ml-2">Linkedin</span>
+                      <Icon icon={'carbon:logo-linkedin'} data-inline="false" />
+                      <span className="nav-link-inner--text d-lg-none ml-2">
+                        Linkedin
+                      </span>
                     </NavLink>
                   </NavItem>
                 )}
@@ -118,10 +158,13 @@ const Navigation = () => {
                       aria-label="Twitter"
                       className="nav-link-icon"
                       href={socialLinks.twitter}
-                      target="_blank">
+                      target="_blank"
+                    >
                       {/* <i className="fa fa-twitter-square" /> */}
-                      <Icon icon={"carbon:logo-twitter"} data-inline="false" />
-                      <span className="nav-link-inner--text d-lg-none ml-2">Twitter</span>
+                      <Icon icon={'carbon:logo-twitter'} data-inline="false" />
+                      <span className="nav-link-inner--text d-lg-none ml-2">
+                        Twitter
+                      </span>
                     </NavLink>
                   </NavItem>
                 )}
