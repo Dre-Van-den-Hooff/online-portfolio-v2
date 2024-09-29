@@ -6,8 +6,8 @@ export const greetings = {
   name: 'Dré Van den Hooff',
   title: "Nice to meet you! I'm Dré",
   description:
-    "I'm 20 years old and I study Applied Information Technology at HoGent. I am passionate about web and mobile development with React and React Native.",
-  resumeLink: 'CV_Dre_Van_den_Hooff.pdf',
+    "I'm 21 years old and I graduated in Applied Information Technology at HoGent in 2023. I am passionate about web and mobile development with React and React Native.",
+  resumeLink: 'Dré_Van_den_Hooff_CV.pdf',
 };
 
 export const openSource = {
@@ -216,22 +216,22 @@ export const skillsSection = {
 
 export const SkillBars = [
   {
-    Stack: 'Frontend/Design', //Insert stack or technology you have experience in
-    progressPercentage: '85', //Insert relative proficiency in percentage
+    Stack: 'Frontend/Design', // Insert stack or technology you have experience in
+    progressPercentage: '90', // Insert relative proficiency in percentage
   },
   {
     Stack: 'Backend',
-    progressPercentage: '85',
+    progressPercentage: '90',
   },
   {
     Stack: 'Programming',
-    progressPercentage: '80',
+    progressPercentage: '90',
   },
 ];
 
 export const educationInfo = [
   {
-    schoolName: 'Instituut Sint-Vincentius a Paulo',
+    schoolName: 'Institute Sint-Vincentius a Paulo',
     subHeader: 'Modern Languages - Science',
     duration: 'September 2018 - June 2020',
     desc: 'High School Diploma in Modern Languages & Science.',
@@ -240,7 +240,7 @@ export const educationInfo = [
     schoolName: 'HoGent',
     subHeader: 'Applied Information Technology',
     duration: 'September 2020 - June 2023',
-    desc: "Currently studying for my bachelor's degree",
+    desc: "Graduated in 2023 and received my bachelor's degree",
     //  descBullets: [
     //    "Lorem ipsum dolor sit amet, consectetur adipdfgiscing elit",
     //    "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
@@ -254,7 +254,7 @@ export const experience = [
     company: 'Codifly',
     companylogo: '/img/codifly_logo.png',
     date: 'June 2022 - August 2022',
-    desc: 'My first experience working as a React developer.',
+    desc: 'Student job - My first experience working as a React developer.',
     link: 'https://codifly.be/',
     // descBullets: [
     // 	"Lorem ipsum dolor sit amet, consdfgectetur adipiscing elit",
@@ -273,6 +273,18 @@ export const experience = [
     // 	"Lorem ipsum dolor sit amet, consectetur adipiscing elit",
     // ],
   },
+  {
+    role: 'Full Stack TypeScript Developer',
+    company: 'Codifly',
+    companylogo: '/img/codifly_logo.png',
+    date: 'August 2023',
+    desc: 'Student job - Further enhance my skills as a full stack web developer.',
+    link: 'https://codifly.be/',
+    // descBullets: [
+    // 	"Lorem ipsum dolor sit amet, consdfgectetur adipiscing elit",
+    // 	"Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    // ],
+  },
 ];
 
 export const projects = [
@@ -282,12 +294,12 @@ export const projects = [
     github: 'https://github.com/Dre-Van-den-Hooff/free-games-webapp-api',
     link: 'https://dre-van-den-hooff.github.io/free-games-gh-pages/',
   },
-  {
-    name: '[WIP] Ark API & Webapplication',
-    desc: 'My first experience with creating my own API using GraphQL and Apollo Server. The Front-end consists of a React application using TypeScript and Chakra UI. ',
-    github: '',
-    link: '',
-  },
+  // {
+  //   name: '[WIP] Ark API & Webapplication',
+  //   desc: 'My first experience with creating my own API using GraphQL and Apollo Server. The Front-end consists of a React application using TypeScript and Chakra UI. ',
+  //   github: '',
+  //   link: '',
+  // },
   {
     name: 'Pokemon guesser app',
     desc: 'My first experience with React Native & TypeScript.',
