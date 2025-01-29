@@ -2,11 +2,26 @@ import emoji from 'react-easy-emoji';
 
 const prefix = '/online-portfolio-v2';
 
+function calculateAge() {
+  const today = new Date();
+  const birthDate = new Date('2002-11-15');
+  let age = today.getFullYear() - birthDate.getFullYear();
+  const monthDifference = today.getMonth() - birthDate.getMonth();
+
+  if (monthDifference < 0 || (monthDifference === 0 && today.getDate() < birthDate.getDate())) {
+      age--;
+  }
+
+  return age;
+}
+
+export const AGE = calculateAge();
+
 export const greetings = {
   name: 'Dré Van den Hooff',
   title: "Nice to meet you! I'm Dré",
   description:
-    "I'm 21 years old and I graduated in Applied Information Technology at HoGent in 2023. I am passionate about web and mobile development with React and React Native.",
+    `I'm ${AGE} years old and I graduated in Applied Information Technology at HoGent in 2023. I am passionate about web and mobile development with React and React Native.`,
   resumeLink: 'Dré_Van_den_Hooff_CV.pdf',
 };
 
@@ -155,6 +170,10 @@ export const skillsSection = {
           fontAwesomeClassname: 'logos:tauri',
         },
         {
+          skillName: 'Electron',
+          fontAwesomeClassname: 'devicon:electron',
+        },
+        {
           skillName: 'Heroku',
           fontAwesomeClassname: 'logos:heroku-icon',
         },
@@ -196,6 +215,10 @@ export const skillsSection = {
         {
           skillName: 'Svelte',
           fontAwesomeClassname: 'vscode-icons:file-type-svelte',
+        },
+        {
+          skillName: 'Astro',
+          fontAwesomeClassname: 'devicon:astro',
         },
         {
           skillName: 'Vuejs',
@@ -246,39 +269,57 @@ export const educationInfo = [
     //    "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
     //  ],
   },
+  {
+    schoolName: 'Vrije Universiteit Brussel',
+    subHeader: 'Bridge Program Computer Science',
+    duration: 'September 2023 - June 2024',
+    desc: 'Education cancelled in 2024.',
+  },
 ];
 
 export const experience = [
+  // {
+  //   role: 'React Developer',
+  //   company: 'Codifly',
+  //   companylogo: '/img/codifly_logo.png',
+  //   date: 'June 2022 - August 2022',
+  //   desc: 'Student job - My first experience working as a React developer.',
+  //   link: 'https://codifly.be/',
+  //   // descBullets: [
+  //   // 	"Lorem ipsum dolor sit amet, consdfgectetur adipiscing elit",
+  //   // 	"Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+  //   // ],
+  // },
+  // {
+  //   role: 'Full Stack TypeScript Developer',
+  //   company: 'Codifly',
+  //   companylogo: '/img/codifly_logo.png',
+  //   date: 'Februari 2023 - May 2023',
+  //   desc: 'Internship during my last semester of Applied Information Technology at HoGent.',
+  //   link: 'https://codifly.be/',
+  //   // descBullets: [
+  //   // 	"Lorem ipsum dolor sit amet, consdfgectetur adipiscing elit",
+  //   // 	"Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+  //   // ],
+  // },
+  // {
+  //   role: 'Full Stack TypeScript Developer',
+  //   company: 'Codifly',
+  //   companylogo: '/img/codifly_logo.png',
+  //   date: 'August 2023',
+  //   desc: 'Student job - Further enhance my skills as a full stack web developer.',
+  //   link: 'https://codifly.be/',
+  //   // descBullets: [
+  //   // 	"Lorem ipsum dolor sit amet, consdfgectetur adipiscing elit",
+  //   // 	"Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+  //   // ],
+  // },
   {
-    role: 'React Developer',
+    role: 'Full Stack Web & Mobile Developer',
     company: 'Codifly',
     companylogo: '/img/codifly_logo.png',
-    date: 'June 2022 - August 2022',
-    desc: 'Student job - My first experience working as a React developer.',
-    link: 'https://codifly.be/',
-    // descBullets: [
-    // 	"Lorem ipsum dolor sit amet, consdfgectetur adipiscing elit",
-    // 	"Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-    // ],
-  },
-  {
-    role: 'Full Stack TypeScript Developer',
-    company: 'Codifly',
-    companylogo: '/img/codifly_logo.png',
-    date: 'Februari 2023 - May 2023',
-    desc: 'Internship during my last semester of Applied Information Technology at HoGent.',
-    link: 'https://codifly.be/',
-    // descBullets: [
-    // 	"Lorem ipsum dolor sit amet, consdfgectetur adipiscing elit",
-    // 	"Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-    // ],
-  },
-  {
-    role: 'Full Stack TypeScript Developer',
-    company: 'Codifly',
-    companylogo: '/img/codifly_logo.png',
-    date: 'August 2023',
-    desc: 'Student job - Further enhance my skills as a full stack web developer.',
+    date: 'October 2024 - current',
+    desc: 'Full time job - After being an intern and working here as a student in the summer of 2022 and 2023 I started working at Codifly full time.',
     link: 'https://codifly.be/',
     // descBullets: [
     // 	"Lorem ipsum dolor sit amet, consdfgectetur adipiscing elit",

@@ -11,7 +11,7 @@ const Feedbacks = dynamic(() => import('../containers/Feedbacks'));
 const GithubProfileCard = dynamic(() =>
   import('../components/GithubProfileCard'),
 );
-import { openSource } from '../portfolio';
+import { openSource, AGE } from '../portfolio';
 import SEO from '../components/SEO';
 
 export default function Home({ githubProfileData }) {
@@ -21,7 +21,7 @@ export default function Home({ githubProfileData }) {
         data={{
           title: 'Dré Van den Hooff',
           description:
-            "I'm 21 years old and I graduated in Applied Information Technology at HoGent in 2023. I am passionate about web and mobile development with React and React Native.",
+            `I'm ${AGE} years old and I graduated in Applied Information Technology at HoGent in 2023. I am passionate about web and mobile development with React and React Native.`,
           //image: "https://avatars3.githubusercontent.com/u/59178380?v=4",
           url: 'https://dre-van-den-hooff.github.io/online-portfolio-v2/',
           keywords: [
