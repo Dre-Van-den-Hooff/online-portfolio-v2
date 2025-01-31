@@ -1,0 +1,12 @@
+version: "3.8"
+
+services:
+  nextapp:
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+    volumes:
+      - /var/lib/docker/volumes/portfolio/_data/app:/app
+    restart: unless-stopped
