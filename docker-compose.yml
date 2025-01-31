@@ -7,6 +7,4 @@ services:
       - "3002:3000"
     environment:
       - NODE_ENV=production
-    # volumes:
-    #   - /var/lib/docker/volumes/portfolio/_data/app:/app
     restart: unless-stopped

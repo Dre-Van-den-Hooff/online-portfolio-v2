@@ -7,7 +7,7 @@ import SocialLinks from "../components/SocialLinks";
 
 const prefix = "/online-portfolio-v2";
 
-const Greetings = () => {
+const Greetings = ({age}) => {
   useEffect(() => {
     document.documentElement.scrollTop = 0;
     document.scrollingElement.scrollTop = 0;
@@ -32,7 +32,10 @@ const Greetings = () => {
               <Row>
                 <Col lg="6">
                   <h1 className="display-3 text-white">{greetings.title + " "}</h1>
-                  <p className="lead text-white">{greetings.description}</p>
+                  <p className="lead text-white">
+                    I'm {age} years old and I graduated in Applied Information Technology at HoGent in 2023. 
+                    I am passionate about web and mobile development with React and React Native.
+                  </p>
                   <SocialLinks />
                   <div className="btn-wrapper my-4">
                     <Button

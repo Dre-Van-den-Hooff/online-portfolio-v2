@@ -2,27 +2,11 @@ import emoji from 'react-easy-emoji';
 
 const prefix = '/online-portfolio-v2';
 
-function calculateAge() {
-  const today = new Date();
-  const birthDate = new Date('2002-11-15');
-  let age = today.getFullYear() - birthDate.getFullYear();
-  const monthDifference = today.getMonth() - birthDate.getMonth();
-
-  if (monthDifference < 0 || (monthDifference === 0 && today.getDate() < birthDate.getDate())) {
-      age--;
-  }
-
-  return age;
-}
-
-export const AGE = calculateAge();
-
 export const greetings = {
   name: 'Dré Van den Hooff',
   title: "Nice to meet you! I'm Dré",
-  description:
-    `I'm ${AGE} years old and I graduated in Applied Information Technology at HoGent in 2023. I am passionate about web and mobile development with React and React Native.`,
   resumeLink: 'Dré_Van_den_Hooff_CV.pdf',
+  // description was moved to Greetings component
 };
 
 export const openSource = {
