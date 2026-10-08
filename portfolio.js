@@ -1,6 +1,3 @@
-
-const prefix = '/online-portfolio-v2';
-
 export const greetings = {
   name: 'Dré Van den Hooff',
   title: "Nice to meet you! I'm Dré",
@@ -28,15 +25,14 @@ export const skillsSection = {
   data: [
     {
       title: 'Full Stack Web Development',
-      lottieAnimationFile: `/lottie/skills/fullstack.json`, // Path of Lottie Animation JSON File
       skills: [
-        '⚡ Building responsive Single-Page-Apps (SPA) in React.js',
-        '⚡ Building mobile applications in React Native',
-        '⚡ Building RESTful APIs in NodeJs using Koa middleware',
-        '⚡ Building (Type)GraphQL APIs in NodeJs with Apollo Server',
-        '⚡ Building type-safe full stack apps with Next.js, tRPC, Prisma and React Query',
-        '⚡ Developing with agentic workflows using Claude Code',
-        '⚡ Setting up MCP servers',
+        'Building responsive Single-Page-Apps (SPA) in React.js',
+        'Building mobile applications in React Native',
+        'Building RESTful APIs in NodeJs using Koa middleware',
+        'Building (Type)GraphQL APIs in NodeJs with Apollo Server',
+        'Building type-safe full stack apps with Next.js, tRPC, Prisma and React Query',
+        'Developing with agentic workflows using Claude Code',
+        'Setting up MCP servers',
       ],
       softwareSkills: [
         {
@@ -123,12 +119,11 @@ export const skillsSection = {
     },
     {
       title: 'Other knowledge',
-      lottieAnimationFile: `/lottie/skills/other-skills.json`, // Path of Lottie Animation JSON File
       skills: [
-        '⚡ Creating full stack web applications using the Blazor framework',
-        '⚡ Experience on working with Java Spring Boot',
-        '⚡ Building native Android and iOS apps',
-        '⚡ Familiar with the use of component libraries for React',
+        'Creating full stack web applications using the Blazor framework',
+        'Experience on working with Java Spring Boot',
+        'Building native Android and iOS apps',
+        'Familiar with the use of component libraries for React',
       ],
       softwareSkills: [
         {
@@ -207,9 +202,8 @@ export const skillsSection = {
     },
     {
       title: 'Interested in or currently learning',
-      lottieAnimationFile: `/lottie/skills/learning.json`, // Path of Lottie Animation JSON File
       skills: [
-        '⚡ New JavaScript frameworks such as Svelte or Vue',
+        'New JavaScript frameworks such as Svelte or Vue',
       ],
       softwareSkills: [
         {
@@ -226,23 +220,40 @@ export const skillsSection = {
         },
       ],
     },
+    {
+      title: 'Self-hosting',
+      skills: [
+        'Running my own services at home, including this website on a Raspberry Pi',
+      ],
+      softwareSkills: [
+        {
+          skillName: 'Docker',
+          fontAwesomeClassname: 'selfhst:docker',
+        },
+        {
+          skillName: 'Portainer',
+          fontAwesomeClassname: 'selfhst:portainer',
+        },
+        {
+          skillName: 'Immich',
+          fontAwesomeClassname: 'selfhst:immich',
+        },
+        {
+          skillName: 'Nextcloud',
+          fontAwesomeClassname: 'selfhst:nextcloud',
+        },
+        {
+          skillName: 'WireGuard',
+          fontAwesomeClassname: 'selfhst:wireguard',
+        },
+        {
+          skillName: 'Nginx Proxy Manager',
+          fontAwesomeClassname: 'selfhst:nginx-proxy-manager',
+        },
+      ],
+    },
   ],
 };
-
-export const SkillBars = [
-  {
-    Stack: 'Frontend/Design', // Insert stack or technology you have experience in
-    progressPercentage: '90', // Insert relative proficiency in percentage
-  },
-  {
-    Stack: 'Backend',
-    progressPercentage: '90',
-  },
-  {
-    Stack: 'Programming',
-    progressPercentage: '90',
-  },
-];
 
 export const educationInfo = [
   {
@@ -348,15 +359,3 @@ export const projects = [
   },
 ];
 
-export const feedbacks = [
-  {
-    name: 'John Smith',
-    feedback:
-      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi, vel illo. Eum magnam beatae ratione eos natus accusamus unde pariatur fugiat at facilis, modi molestiae? Labore odio sit eligendi. Tenetur.',
-  },
-  {
-    name: 'John Smith',
-    feedback:
-      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi, vel illo. Eum magnam beatae ratione eos natus accusamus unde pariatur fugiat at facilis, modi molestiae? Labore odio sit eligendi. Tenetur.',
-  },
-];

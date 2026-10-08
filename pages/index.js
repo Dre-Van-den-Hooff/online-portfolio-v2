@@ -1,61 +1,54 @@
-import dynamic from "next/dynamic";
-import PropTypes from "prop-types";
-const Navigation = dynamic(() => import("../components/Navigation"));
-const Greetings = dynamic(() => import("../containers/Greetings"));
-const Skills = dynamic(() => import("../containers/Skills"));
-const Proficiency = dynamic(() => import("../containers/Proficiency"));
-const Education = dynamic(() => import("../containers/Education"));
-const Experience = dynamic(() => import("../containers/Experience"));
-const Projects = dynamic(() => import("../containers/Projects"));
-const Feedbacks = dynamic(() => import("../containers/Feedbacks"));
-const GithubProfileCard = dynamic(
-  () => import("../components/GithubProfileCard"),
-);
-import { openSource } from "../portfolio";
-import SEO from "../components/SEO";
+import { openSource, socialLinks } from '../portfolio';
+import SEO from '../components/SEO';
+import Bento from '../components/Bento';
 
 export default function Home({ githubProfileData, age }) {
   return (
-    <div>
+    <>
       <SEO
         data={{
-          title: "Dré Van den Hooff",
+          title: 'Dré Van den Hooff',
           description: `I'm ${age} years old and I graduated in Applied Information Technology at HoGent in 2023. I am passionate about web and mobile development with React and React Native.`,
-          //image: "https://avatars3.githubusercontent.com/u/59178380?v=4",
-          url: "https://portfolio.drevdh.be/",
+          url: 'https://portfolio.drevdh.be/',
           keywords: [
-            "Dré",
-            "Van den Hooff",
-            "@dre.vdh",
-            "dre.vdh",
-            "Portfolio",
-            "Dré Portfolio ",
-            "Dré Van den Hooff Portfolio",
+            'Dré',
+            'Van den Hooff',
+            '@dre.vdh',
+            'dre.vdh',
+            'Portfolio',
+            'Dré Portfolio',
+            'Dré Van den Hooff Portfolio',
           ],
         }}
       />
-      <Navigation />
-      <Greetings age={age} />
-      <Skills />
-      <Proficiency />
-      <Education />
-      <Experience />
-      {/* <Feedbacks /> */}
-      {/* <Projects /> */}
-      <GithubProfileCard prof={githubProfileData} />
-    </div>
+      <div className="page">
+        <header className="topbar">
+          <span className="topbar__name">Dré Van den Hooff</span>
+          <span className="topbar__meta mono">Portfolio — {new Date().getFullYear()}</span>
+        </header>
+        <Bento age={age} avatarUrl={githubProfileData?.avatar_url} />
+        <footer className="footer mono">
+          <span>© {new Date().getFullYear()} Dré Van den Hooff</span>
+          <span>
+            <a href={socialLinks.instagram} target="_blank" rel="noopener noreferrer">
+              Instagram
+            </a>{' '}
+            ·{' '}
+            <a href={socialLinks.github} target="_blank" rel="noopener noreferrer">
+              GitHub
+            </a>
+          </span>
+          <span>Self-hosted on a Raspberry Pi</span>
+        </footer>
+      </div>
+    </>
   );
 }
 
-Home.prototype = {
-  githubProfileData: PropTypes.object.isRequired,
-};
-
-export async function getStaticProps(_) {
-  // Caluclate age on page load.
+export async function getStaticProps() {
   const calculateAge = () => {
     const today = new Date();
-    const birthDate = new Date("2002-11-15");
+    const birthDate = new Date('2002-11-15');
     let age = today.getFullYear() - birthDate.getFullYear();
     const monthDifference = today.getMonth() - birthDate.getMonth();
 
@@ -69,13 +62,16 @@ export async function getStaticProps(_) {
     return age;
   };
 
-  const age = calculateAge();
-
-  const githubProfileData = await fetch(
-    `https://api.github.com/users/${openSource.githubUserName}`,
-  ).then((res) => res.json());
+  // The GitHub profile only adds the avatar, so don't fail the build without it.
+  let githubProfileData = null;
+  try {
+    const res = await fetch(
+      `https://api.github.com/users/${openSource.githubUserName}`,
+    );
+    if (res.ok) githubProfileData = await res.json();
+  } catch {}
 
   return {
-    props: { githubProfileData, age },
+    props: { githubProfileData, age: calculateAge() },
   };
 }
