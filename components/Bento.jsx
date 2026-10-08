@@ -9,6 +9,7 @@ import {
 } from '../portfolio';
 import LocalTime from './LocalTime';
 import Tile from './Tile';
+import WaterCanvas from './WaterCanvas';
 
 const [doing, other, learning, selfHosting] = skillsSection.data;
 const current = experience[0];
@@ -59,6 +60,7 @@ const Bento = ({ age, avatarUrl }) => (
     </Tile>
 
     <Tile area="now" index={2} className="tile--now">
+      <WaterCanvas className="now__water" />
       <div className="now__top">
         <p className="label">
           <span className="live-dot" aria-hidden="true" /> Currently

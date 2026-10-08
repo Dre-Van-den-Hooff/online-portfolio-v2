@@ -298,6 +298,14 @@ a.tile:hover {
   border-color: transparent;
 }
 
+.now__water {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+
 .tile--now .label {
   color: rgba(255, 255, 255, 0.8);
 }
