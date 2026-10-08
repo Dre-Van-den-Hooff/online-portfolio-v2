@@ -1,18 +1,31 @@
-import React from "react";
-import Lottie from "react-lottie";
+import React, { useEffect, useRef } from "react";
 
 const GreetingLottie = ({ animationPath }) => {
-  const defaultOptions = {
-    loop: true,
-    autoplay: true,
-    path: animationPath,
-  };
+  const container = useRef(null);
 
-  return (
-    <div onClick={() => null}>
-      <Lottie options={defaultOptions} />
-    </div>
-  );
+  useEffect(() => {
+    let animation;
+    let cancelled = false;
+
+    // lottie-web touches `document` on import, so load it client-side only.
+    import("lottie-web").then(({ default: lottie }) => {
+      if (cancelled) return;
+      animation = lottie.loadAnimation({
+        container: container.current,
+        renderer: "svg",
+        loop: true,
+        autoplay: true,
+        path: animationPath,
+      });
+    });
+
+    return () => {
+      cancelled = true;
+      animation?.destroy();
+    };
+  }, [animationPath]);
+
+  return <div ref={container} />;
 };
 
 export default GreetingLottie;

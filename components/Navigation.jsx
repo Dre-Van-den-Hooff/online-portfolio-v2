@@ -35,11 +35,12 @@ const Navigation = () => {
         <Navbar
           className="navbar-main navbar-transparent navbar-light headroom"
           expand="lg"
+          container={false}
           id="navbar-main"
         >
           <Container>
             <NavbarBrand
-              href="https://dre-van-den-hooff.github.io/online-portfolio-v2/"
+              href="https://portfolio.drevdh.be/"
               className="mr-lg-5"
             >
               <h2 className="text-white" id="nav-title">

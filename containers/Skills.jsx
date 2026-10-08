@@ -1,6 +1,5 @@
 import { Icon } from '@iconify/react';
 import React, { Fragment } from 'react';
-import { Fade } from 'react-reveal';
 import { Col, Container, Row, UncontrolledTooltip } from 'reactstrap';
 import DisplayLottie from '../components/DisplayLottie';
 import { skillsSection } from '../portfolio';

@@ -1,8 +1,11 @@
-# Use official Node.js 16.20.2 image
-FROM node:16.20.2-alpine
+# Use official Node.js 24 LTS image (major tag picks up patch/security releases)
+FROM node:24-alpine
 
 # Set working directory
 WORKDIR /app
+
+# Ensure Yarn classic is available (not guaranteed in newer Node images)
+RUN command -v yarn || npm install -g yarn@1.22.22
 
 # Copy package.json and yarn.lock
 COPY package.json yarn.lock ./

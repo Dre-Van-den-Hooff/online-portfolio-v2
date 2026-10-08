@@ -1,4 +1,3 @@
-import emoji from 'react-easy-emoji';
 
 const prefix = '/online-portfolio-v2';
 
@@ -35,6 +34,9 @@ export const skillsSection = {
         '⚡ Building mobile applications in React Native',
         '⚡ Building RESTful APIs in NodeJs using Koa middleware',
         '⚡ Building (Type)GraphQL APIs in NodeJs with Apollo Server',
+        '⚡ Building type-safe full stack apps with Next.js, tRPC, Prisma and React Query',
+        '⚡ Developing with agentic workflows using Claude Code',
+        '⚡ Setting up MCP servers',
       ],
       softwareSkills: [
         {
@@ -88,6 +90,26 @@ export const skillsSection = {
         {
           skillName: 'Koa',
           fontAwesomeClassname: 'logos:koa',
+        },
+        {
+          skillName: 'NextJs',
+          fontAwesomeClassname: 'logos:nextjs-icon',
+        },
+        {
+          skillName: 'tRPC',
+          fontAwesomeClassname: 'logos:trpc',
+        },
+        {
+          skillName: 'Prisma',
+          fontAwesomeClassname: 'logos:prisma',
+        },
+        {
+          skillName: 'React Query',
+          fontAwesomeClassname: 'logos:react-query-icon',
+        },
+        {
+          skillName: 'Claude Code',
+          fontAwesomeClassname: 'logos:claude-code',
         },
         // {
         //   skillName: 'NPM',
@@ -187,15 +209,9 @@ export const skillsSection = {
       title: 'Interested in or currently learning',
       lottieAnimationFile: `/lottie/skills/learning.json`, // Path of Lottie Animation JSON File
       skills: [
-        '⚡ Server side React using NextJs',
         '⚡ New JavaScript frameworks such as Svelte or Vue',
-        '⚡ Other TypeScript ORM solutions like Prisma',
       ],
       softwareSkills: [
-        {
-          skillName: 'NextJs',
-          fontAwesomeClassname: 'logos:nextjs',
-        },
         {
           skillName: 'Svelte',
           fontAwesomeClassname: 'vscode-icons:file-type-svelte',
@@ -207,14 +223,6 @@ export const skillsSection = {
         {
           skillName: 'Vuejs',
           fontAwesomeClassname: 'logos:vue',
-        },
-        {
-          skillName: 'Prisma',
-          fontAwesomeClassname: 'logos:prisma',
-        },
-        {
-          skillName: 'tRPC',
-          fontAwesomeClassname: 'logos:trpc',
         },
       ],
     },
@@ -298,6 +306,14 @@ export const experience = [
   //   // 	"Lorem ipsum dolor sit amet, consectetur adipiscing elit",
   //   // ],
   // },
+  {
+    role: 'Full Stack Developer (Consultant)',
+    company: 'BOSAQ',
+    companylogo: '/img/bosaq_logo.png',
+    date: 'August 2026 - current',
+    desc: 'Consultant via Codifly - Working as a full stack developer at BOSAQ, a Belgian clean-tech company building circular water treatment systems.',
+    link: 'https://bosaq.com/',
+  },
   {
     role: 'Full Stack Web & Mobile Developer',
     company: 'Codifly',

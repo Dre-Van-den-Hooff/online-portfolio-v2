@@ -7,7 +7,6 @@ import {
   CardText,
   Col,
 } from 'reactstrap';
-import { Fade } from 'react-reveal';
 
 const prefix = '/online-portfolio-v2';
 

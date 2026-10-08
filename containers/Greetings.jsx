@@ -7,7 +7,7 @@ import SocialLinks from "../components/SocialLinks";
 
 const prefix = "/online-portfolio-v2";
 
-const Greetings = ({age}) => {
+const Greetings = ({ age }) => {
   useEffect(() => {
     document.documentElement.scrollTop = 0;
     document.scrollingElement.scrollTop = 0;
@@ -31,17 +31,22 @@ const Greetings = ({age}) => {
             <div className="col px-0">
               <Row>
                 <Col lg="6">
-                  <h1 className="display-3 text-white">{greetings.title + " "}</h1>
+                  <h1 className="display-3 text-white">
+                    {greetings.title + " "}
+                  </h1>
                   <p className="lead text-white">
-                    I'm {age} years old and I graduated in Applied Information Technology at HoGent in 2023. 
-                    I am passionate about web and mobile development with React and React Native.
+                    I&apos;m {age} years old and I graduated in Applied
+                    Information Technology at HoGent in 2023. I am passionate
+                    about web and mobile development with React and React
+                    Native.
                   </p>
                   <SocialLinks />
                   <div className="btn-wrapper my-4">
                     <Button
                       className="btn-white btn-icon mb-3 mb-sm-0 ml-1"
                       color="default"
-                      href={greetings.resumeLink}>
+                      href={greetings.resumeLink}
+                    >
                       <span className="btn-inner--icon mr-1">
                         {/* <i className="fa fa-file" /> */}
                         <Icon icon={"akar-icons:file"} data-inline="false" />
@@ -64,7 +69,8 @@ const Greetings = ({age}) => {
               version="1.1"
               viewBox="0 0 2560 100"
               x="0"
-              y="0">
+              y="0"
+            >
               <polygon className="fill-white" points="2560 0 2560 100 0 100" />
             </svg>
           </div>

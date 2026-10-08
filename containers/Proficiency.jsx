@@ -1,7 +1,6 @@
 import React from 'react';
 import { SkillBars } from '../portfolio';
 import { Container, Row, Progress, Col } from 'reactstrap';
-import { Fade } from 'react-reveal';
 import GreetingLottie from '../components/DisplayLottie';
 
 const prefix = '/online-portfolio-v2';
