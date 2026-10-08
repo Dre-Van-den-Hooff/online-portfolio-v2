@@ -1,6 +1,8 @@
 services:
   nextapp:
     build: .
+    # Always rebuild on (re)deploy; otherwise Portainer reuses the old image.
+    pull_policy: build
     ports:
       - "3002:3000"
     environment:
